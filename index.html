@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>RPS</title>
+  </head>
+
+  <body>
+   	<header>
+   	<h1>  Lets play a game</h1>
+    </header>
+    <main>
+
+    	<div id = "sub_container">
+    		<p>Choose an option!</p>
+    	</div>
+    	<div id = "button_holder">
+    		<button id = "rbutton" onclick="clickButton(this.id)">Rock</button>
+    		<button id = "pbutton" onclick="clickButton(this.id)">Paper</button>
+    		<button id = "sbutton" onclick="clickButton(this.id)">Scissors</button>
+    	</div>
+    	<p>Or type it in!</p>
+    	<div>
+    		<form id = "myform">
+  			<input type="text" id="userResponse" name="userResponse">
+ 			<button type="button" onclick="writeResponse()">Let's Play!</button>
+			</form>
+    	</div>
+    	<div id="results">
+    	</div>
+ 		
+    </main>
+    <footer> </footer>
+  </body>
+
+  <script src="index.js"></script>
+</html>
