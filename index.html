@@ -24,13 +24,15 @@
       <div class = "sub_container">
     	<p>Or type it in!</p>
       </div>
-    	<div>
+    	<div id = "form_container">
     		<form id = "myform">
   			<input type="text" id="userResponse" name="userResponse">
- 			<button type="button" onclick="writeResponse()">Let's Play!</button>
 			</form>
     	</div>
-    	<div id="results">
+      <div id = "playbutton_container">
+      <button id=playbutton type="button" onclick="writeResponse()">Let's Play!</button>
+      </div>
+    	<div class = "sub_container" id="results">
     	</div>
  		
     </main>
