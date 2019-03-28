@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <title>RPS</title>
   </head>
 
@@ -12,15 +13,17 @@
     </header>
     <main>
 
-    	<div id = "sub_container">
+    	<div class = "sub_container">
     		<p>Choose an option!</p>
     	</div>
     	<div id = "button_holder">
-    		<button id = "rbutton" onclick="clickButton(this.id)">Rock</button>
-    		<button id = "pbutton" onclick="clickButton(this.id)">Paper</button>
-    		<button id = "sbutton" onclick="clickButton(this.id)">Scissors</button>
-    	</div>
+    		<button class = "img_button" id = "rbutton" onclick="clickButton(this.id)"><img src="rock.png"></button>
+    		<button class = "img_button" id = "pbutton" onclick="clickButton(this.id)"><img src="paper.png"></button>
+    		<button class = "img_button" id = "sbutton" onclick="clickButton(this.id)"><img src="scissors.png"></button>
+    	</div >
+      <div class = "sub_container">
     	<p>Or type it in!</p>
+      </div>
     	<div>
     		<form id = "myform">
   			<input type="text" id="userResponse" name="userResponse">
